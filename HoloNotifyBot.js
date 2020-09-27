@@ -168,6 +168,13 @@ function scanByVid(/*vid, */index){
 				liveObj.isNew = true;  //prevent re-posting scheduled stream
 				liveObj.notified = false;  //prevent re-posting stream notify
 			}
+			
+			//ignore old video appear in schedule website
+			var DateObj = new Date();
+			if(Date.parse(liveObj.startTime) < DateObj){
+				liveObj.isNew = false;
+				liveObj.notified = true;
+			}
 				
 			scheduledObj[index] = liveObj;
 	
