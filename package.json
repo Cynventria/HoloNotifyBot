@@ -1,0 +1,28 @@
+{
+  "name": "holonotifybot",
+  "version": "1.0.0",
+  "description": "Simple Discord bot to post Hololive streaming notifications",
+  "main": "HoloNotifyBot.js",
+  "scripts": {
+    "start": "node HoloNotifyBot.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cynventria/HoloNotifyBot.git"
+  },
+  "keywords": [
+    "hololive",
+    "discord"
+  ],
+  "author": "Cynventria",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Cynventria/HoloNotifyBot/issues"
+  },
+  "homepage": "https://github.com/Cynventria/HoloNotifyBot#readme",
+  "dependencies": {
+    "discord.js": "^12.3.1",
+    "fs": "0.0.1-security",
+    "xmlhttprequest": "^1.8.0"
+  }
+}
